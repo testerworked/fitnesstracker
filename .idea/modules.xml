@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fitnesstracker.iml" filepath="$PROJECT_DIR$/.idea/modules/fitnesstracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FitnessCompose.iml" filepath="$PROJECT_DIR$/.idea/modules/FitnessCompose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FitnessCompose.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FitnessCompose.app.iml" />
     </modules>
   </component>
 </project>

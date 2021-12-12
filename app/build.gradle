@@ -19,13 +19,10 @@ android {
         applicationId "com.myfitness.fitnesscompose"
         minSdk 21
         targetSdk 30
-<<<<<<< HEAD
+
         versionCode 4
         versionName "1.14"
-=======
-        versionCode 3
-        versionName "1.12"
->>>>>>> ec3dbaf... version: 1.12:3;
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

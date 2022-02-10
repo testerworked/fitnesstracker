@@ -31,7 +31,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessCompose">
         <activity
-            android:name=".StepCounter"
+            android:name=".di.StepCounter"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

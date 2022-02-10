@@ -1,10 +1,10 @@
-package com.myfitness.fitnesscompose
+package com.myfitness.fitnesscompose.di
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.myfitness.fitnesscompose.R
 
 class StepCounter : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -12,5 +12,5 @@ class StepCounter : AppCompatActivity() {
     }
 
 
-    
+
 }

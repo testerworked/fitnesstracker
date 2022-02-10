@@ -1,21 +1,16 @@
 package com.myfitness.fitnesscompose
 
-import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.view.Surface
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.*
 import androidx.compose.ui.graphics.Color
@@ -23,14 +18,12 @@ import androidx.compose.ui.graphics.Color.Companion.Black
 import androidx.compose.ui.graphics.Color.Companion.Green
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.semantics.Role.Companion.Button
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.myfitness.fitnesscompose.di.StepCounter
 import com.myfitness.fitnesscompose.ui.theme.FitnessComposeTheme
-import dagger.internal.DaggerCollections
-import dagger.Component
 import javax.inject.Inject
 
 
@@ -75,7 +68,9 @@ fun ButtonComponent(buttonText: String) {
     Button(
         onClick = {
             //context.startActivity(intent)
-            Toast.makeText(context, "Clicked on Button", Toast.LENGTH_SHORT).show()
+            val i = Intent(context, StepCounter::class.java)
+            context.startActivity(i)
+            Toast.makeText(context, "Clicked on BUTTON YES!", Toast.LENGTH_SHORT).show()
         },
         modifier = Modifier
             .focusRequester(focusRequester)
